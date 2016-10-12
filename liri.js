@@ -102,7 +102,7 @@ function spotifySong(){
 	  			"Spot Link: " + input.external_urls.spotify + "\n" +
 	  			"Album: " + input.album.name + "\n";
 	  		console.log(spotifyDetails);
-	  		logText(spotifyDetails);			
+	  		historyLog(spotifyDetails);			
 	    }
 	 
 	});
