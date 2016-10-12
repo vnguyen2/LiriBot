@@ -1,0 +1,23 @@
+{
+  "name": "liribot",
+  "version": "0.0.1",
+  "description": "Siri sister Liri",
+  "main": "keys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnguyen2/LiriBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnguyen2/LiriBot/issues"
+  },
+  "homepage": "https://github.com/vnguyen2/LiriBot#readme",
+  "dependencies": {
+    "spotify": "^0.3.0",
+    "twitter": "^1.4.0"
+  }
+}
