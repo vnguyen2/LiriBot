@@ -24,7 +24,7 @@ switch(liriAction){
         break;
 
     case 'spotify-this-song':
-        Spotify();
+        spotifySong();
         break;
 
     case 'do-what-it-says':
@@ -64,7 +64,7 @@ function movie(){
 	  		historyLog(movieDetails);
 		}
 	});
-}
+};
 
 //display up to 20 tweets from feed
 function tweets(){
@@ -84,9 +84,26 @@ function tweets(){
   			})
   		}
 	});
-}
+};
 
 //spotify finding a song
-function spotify(){
-    
+function spotifySong(){
+	spotify.search({
+		type: 'track',
+		query: liriArgument,
+	}, function(err, data) {
+	    if (err) {
+	        console.log('Error occurred: ' + err);
+	        return;
+	    }else{
+	    	var input = data.tracks.items[0];
+	  		var spotifyDetails = "Artist: " + input.artists[0].name + "\n" +
+	  			"Song Name: " + input.name + "\n" +
+	  			"Spot Link: " + input.external_urls.spotify + "\n" +
+	  			"Album: " + input.album.name + "\n";
+	  		console.log(spotifyDetails);
+	  		logText(spotifyDetails);			
+	    }
+	 
+	});
 }
