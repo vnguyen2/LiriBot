@@ -1,15 +1,16 @@
 //all npm packages and files needed
 var Twitter = require('twitter');
-var twitter = new Twitter(keys);
 var keys = require("./keys.js");
+var twitter = new Twitter(keys.twitterKeys);
 var spotify = require('spotify');
 var request = require('request');
 var fs = require('fs'); 
+console.log(keys);
 
 //node arguments
 var liriAction = process.argv[2];
 var liriArgument = process.argv;
-    liriArgument = liriArguent.slice(0,3).join("+");
+    liriArgument.splice(0,3).join("+");
 	console.log(liriArgument);
 
 //switch case for Liri Actions.
@@ -18,19 +19,15 @@ switch(liriAction){
     case 'my-tweets':
         tweets();
         break;
-
     case 'movie-this':
         movie();
         break;
-
     case 'spotify-this-song':
         spotifySong();
         break;
-
     case 'do-what-it-says':
         random();
         break;
-
     default:
     console.log("Please enter a valid action.")
 };
@@ -51,7 +48,7 @@ function historyLog(data){
 function movie(){
 	request(`http://www.omdbapi.com/?t=${liriArgument}&y=&i=&plot=short&tomatoes=true&r=json`, function (error, response, body) {
 		if (!error && response.statusCode == 200) {
-			var parsedReponse = JSON.parse(body)
+			var parsedResponse = JSON.parse(body)
 	  		var movieDetails = "Movie Title: " + parsedResponse.Title + "\n" +
 	  			"Year Release: " + parsedResponse.Year + "\n" +
 	  			"Country Produced: " + parsedResponse.Country + "\n" +
@@ -101,7 +98,6 @@ function spotifySong(){
 	  			"Song Name: " + input.name + "\n" +
 	  			"Spot Link: " + input.external_urls.spotify + "\n" +
 	  			"Album: " + input.album.name + "\n";
-	  		console.log(spotifyDetails);
 	  		historyLog(spotifyDetails);			
 	    }
 	 

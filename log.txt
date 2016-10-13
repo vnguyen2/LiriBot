@@ -1,0 +1,44 @@
+Movie Title: undefined
+Year Release: undefined
+Country Produced: undefined
+Language: undefined
+Plot: undefined
+Actors: undefined
+IMBD Rating: undefined
+Rotten Tomatoes Rating: undefined
+Rotten Tomatoes URL: undefined
+
+Movie Title: Frozen
+Year Release: 2013
+Country Produced: USA
+Language: English, Icelandic
+Plot: When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
+Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
+IMBD Rating: 7.6
+Rotten Tomatoes Rating: 7.7
+Rotten Tomatoes URL: http://www.rottentomatoes.com/m/frozen_2013/
+
+Artist: Ivar Oosterloo
+Song Name: Hit Me Baby One More Time
+Spot Link: https://open.spotify.com/track/69uPBNbTdMrqfijZiCH7tv
+Album: The Best Of
+
+Artist: Calvin Harris
+Song Name: How Deep Is Your Love
+Spot Link: https://open.spotify.com/track/22mek4IiqubGD9ctzxc69s
+Album: How Deep Is Your Love
+
+Artist: Calvin Harris
+Song Name: How Deep Is Your Love
+Spot Link: https://open.spotify.com/track/22mek4IiqubGD9ctzxc69s
+Album: How Deep Is Your Love
+
+Tweet: Making these test Tweets
+Published: Wed Oct 12 05:02:24 +0000 2016
+
+Tweet: cool people tweet in console
+Published: Wed Oct 12 05:02:49 +0000 2016
+
+Tweet: Doing HW
+Published: Wed Oct 12 05:02:14 +0000 2016
+
