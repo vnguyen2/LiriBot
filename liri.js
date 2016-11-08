@@ -103,3 +103,19 @@ function spotifySong(){
 	 
 	});
 }
+
+function random() {
+  fs.readFile("random.txt", "utf8", function(err, data) {
+    console.log(data);
+
+    var dataArr = data.split(",");
+
+    if (dataArr.length === 2) {
+      spotifySong(dataArr[0], dataArr[1]);
+    }
+    else if (dataArr.length === 1) {
+      spotifySong(dataArr[0]);
+    }
+
+  });
+};
